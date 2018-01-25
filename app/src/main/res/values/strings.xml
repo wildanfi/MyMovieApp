@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">My Movie App</string>
+    <string name="api_key">a937fc830d53c7f2b501028d20062caa</string>
+    <string name="title_activity_movie">MovieActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_movie_detail">Detail</string>
+</resources>
