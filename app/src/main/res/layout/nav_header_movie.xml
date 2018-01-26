@@ -16,13 +16,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingTop="@dimen/nav_header_vertical_spacing"
-        android:text="My Movie List"
+        android:textSize="18sp"
+        android:text="All Movie Category"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Choose what you want to see" />
+        android:text="Choose your movie what you want" />
 
 </LinearLayout>

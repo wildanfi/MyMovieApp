@@ -15,5 +15,6 @@ public interface Constant {
         String TOP_RATED = "Top Rated";
         String UPCOMING = "Upcoming";
         String POPULAR = "Popular";
+        String ABOUT = "About";
     }
 }
