@@ -4,4 +4,7 @@
     <color name="birutuabanget">#001c49</color>
     <color name="colorAccent">#0070b6</color>
     <color name="colorSliderTitle">#c7000000</color>
+    <color name="background">#b7fffb</color>
+    <color name="backgroundterang">#e5fffa</color>
+
 </resources>

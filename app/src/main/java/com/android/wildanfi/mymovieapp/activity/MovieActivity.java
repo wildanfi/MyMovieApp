@@ -12,12 +12,15 @@ import android.view.MenuItem;
 
 import com.android.wildanfi.mymovieapp.R;
 import com.android.wildanfi.mymovieapp.fragment.AboutFragment;
+import com.android.wildanfi.mymovieapp.fragment.FavoriteFragment;
 import com.android.wildanfi.mymovieapp.fragment.MovieFragment;
+import com.android.wildanfi.mymovieapp.model.MovieDetail;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
 import static com.android.wildanfi.mymovieapp.util.Constant.FragmentChooser.ABOUT;
+import static com.android.wildanfi.mymovieapp.util.Constant.FragmentChooser.FAVORITE;
 import static com.android.wildanfi.mymovieapp.util.Constant.FragmentChooser.NOW_PLAYING;
 import static com.android.wildanfi.mymovieapp.util.Constant.FragmentChooser.POPULAR;
 import static com.android.wildanfi.mymovieapp.util.Constant.FragmentChooser.TOP_RATED;
@@ -28,7 +31,7 @@ import static com.android.wildanfi.mymovieapp.util.Constant.FragmentChooser.UPCO
  */
 
 public class MovieActivity extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener {
+        implements NavigationView.OnNavigationItemSelectedListener, FavoriteFragment.OnListFragmentInteractionListener {
 
     @BindView(R.id.toolbar)
     Toolbar toolbar;
@@ -91,7 +94,8 @@ public class MovieActivity extends AppCompatActivity
             fragment = MovieFragment.newInstance(POPULAR);
             setFragment(fragment, POPULAR);
         } else if (id == R.id.nav_favorite) {
-
+            fragment = FavoriteFragment.newInstance();
+            setFragment(fragment, FAVORITE);
         } else if (id == R.id.nav_about){
             fragment = new AboutFragment();
             setFragment(fragment, ABOUT);
@@ -101,5 +105,10 @@ public class MovieActivity extends AppCompatActivity
         }
         drawer.closeDrawer(GravityCompat.START);
         return false;
+    }
+
+    @Override
+    public void onListFragmentInteraction(MovieDetail item) {
+
     }
 }

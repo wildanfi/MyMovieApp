@@ -9,6 +9,7 @@ public interface Constant {
         String BASE_URL = "https://Api.themoviedb.org/3/movie/";
         String API_KEY = "a937fc830d53c7f2b501028d20062caa";
         String IMAGE_PATH = "https://image.tmdb.org/t/p/w500";
+        String RATING = "\u2605 ";
     }
     interface FragmentChooser{
         String NOW_PLAYING = "Now Playing";
@@ -16,5 +17,6 @@ public interface Constant {
         String UPCOMING = "Upcoming";
         String POPULAR = "Popular";
         String ABOUT = "About";
+        String FAVORITE = "Favorite";
     }
 }
